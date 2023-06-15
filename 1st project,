@@ -1,0 +1,25 @@
+CREATE TABLE fashion (id INTEGER PRIMARY KEY,  name text, price INTEGER, descprition TEXT, ratings INTEGER, quantity INTEGER, typ text);
+
+INSERT INTO fashion VALUES (1, "blouse", 15, "light and pretty", 4.5, 2, "summer");
+INSERT INTO fashion VALUES  ( 2, "crop top", 10, "perfect for summer", 4.6,3, "summer");
+Insert INTO fashion VALUES ( 3," long skirt", 25, "perfect for summer", 5,2,"summer");
+INSERT INTO fashion VALUES (4, "jean shorts", 30, "perfect for summer", 4.6,1,"summer");
+INSERT INTO fashion VALUES ( 5, "jacket", 30, " warm and cozy", 4.3,1,"winter");
+INSERT INTO fashion VALUES (6, "sweater", 20, "warm and cozy", 4.5,2,"winter");
+INSERT INTO fashion VALUES (7, "tutle neck", 25, "warm ans cozy", 4.7,3,"winter"); 
+INSERT INTO fashion VALUES (8, "sunglasses", 12,"perfect for summer", 5.8,1,"accsessory"); 
+INSERT INTO fashion VALUES ( 9, "graphic T", 10, "cute and comfy", 5.2,3,"summer and winter");
+INSERT INTO fashion VALUES (10, "braclet", 5, "cute charms", 4.1,4,"accsessory"); 
+INSERT INTO fashion VALUES ( 11, "heals", 30, "super sexy", 4.41,1,"accsessory");
+INSERT INTO fashion VALUES ( 12, "puffed sleeve top", 25, "cottage core", 5,2, "summer");
+INSERT INTO fashion VALUES ( 13, "cute sneakers", 30, "cute ans comfy", 4.6,1,"accsessory");
+INSERT INTO fashion VALUES ( 14, "short skirt", 20, "super sexy", 4.3,1,"summer");
+INSERT INTO fashion VALUES ( 15, "longlseeve keyhole top", 20, "cute", 4.2,1, "winter");
+
+
+SELECT * FROM fashion WHERE price ORDER BY price;
+
+
+SELECT sum(quantity) FROM fashion;
+
+SELECT avg(ratings) FROM fashion;
